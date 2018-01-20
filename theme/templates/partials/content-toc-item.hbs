@@ -1,0 +1,17 @@
+{{!--
+  ! A single TOC item.
+  !
+  ! @param {string} this.slug - Anchor ID
+  ! @param {string} this.content - The heading text.
+  ! @param {array} [this.children] - Optional subheadings.
+--}}
+<li>
+  <a href="#{{ slug }}">{{ content }}</a>
+  {{# if children }}
+    <ul>
+      {{# each children }}
+        {{> content-toc-item }}
+      {{/ each }}
+    </ul>
+  {{/ if }}
+</li>

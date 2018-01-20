@@ -1,0 +1,21 @@
+{
+  "name": "babylonjsdoc-generator",
+  "version": "1.0.0",
+  "description": "Website generator for doc.babylonjs.com",
+  "main": "assemblefile.js",
+  "scripts": {},
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "assemble": "^0.24.3",
+    "axios": "^0.17.1",
+    "clone-deep": "^3.0.1",
+    "gulp-extname": "^0.2.2",
+    "highlight.js": "^9.12.0",
+    "markdown-toc": "^1.2.0",
+    "micromatch": "^3.1.5",
+    "remarkable": "^1.7.1",
+    "through2": "^2.0.3",
+    "typedoc": "^0.9.0"
+  }
+}

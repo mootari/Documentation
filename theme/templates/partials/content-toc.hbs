@@ -1,0 +1,20 @@
+{{!--
+  ! Table of Contents.
+  !
+  ! @param {object[]} toc
+--}}
+<div class="contentTable">
+
+  <div class="tocHeader">
+    <span class="tocTitle"><i class="tocIcon fa fa-book"></i>Table of contents</span>
+  </div>
+
+  <div class="tocContent">
+    <ul>
+      {{# each toc }}
+        {{> content-toc-item }}
+      {{/ each }}
+    </ul>
+  </div>
+
+</div>

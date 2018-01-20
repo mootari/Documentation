@@ -1,0 +1,55 @@
+{{#> wrapper-html }}
+
+  <div id="wrapper">
+    <div class="statics-banner">
+      <h1>{{ title }}</h1>
+    </div>
+    <div class="horizontal-separator"></div>
+    <div class="statics-content">
+
+      {% body %}
+
+      {{! todo: Reduce tag soup }}
+
+      {{! todo: Should be created dynamically from fileList }}
+      <div class="tagList">
+        <div class="tagWrapper">
+          <div class="tag" data-name="All">
+            <div class="tagDescriptionWrapper">
+              <h3 class="tagTitle">All</h3>
+            </div>
+          </div>
+        </div>
+
+      {{# each-map children }}
+          <div class="tagWrapper">
+            <div class="tag" data-name="{{ name }}">
+              <div class="tagDescriptionWrapper">
+                <h3 class="tagTitle">{{ title }}</h3>
+              </div>
+            </div>
+          </div>
+      {{/ each-map }}
+      </div>
+
+      <div class="fileList">
+        {{# each-map children }}
+          {{# each-map children }}
+            <div class="fileTitle {{ ../name }} All">
+              <div class="fileNumber"></div>
+              <a class="checkLocal" href="{{"#" }}">{{ title }}
+                <div class="inline-tags">
+                  <div class="inline-tag">{{ ../title }}{{# if level }} - L{{ level }}{{/ if }}</div>
+                </div>
+              </a>
+            </div>
+          {{/ each-map }}
+        {{/ each-map }}
+      </div>
+
+    </div>
+  </div>
+
+  <script src="/js/statics.js"></script>
+
+{{/ wrapper-html }}

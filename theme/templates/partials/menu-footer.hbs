@@ -1,0 +1,16 @@
+{{!--
+  ! Footer menu.
+  !
+  ! @param {object[]} menu
+  ! @param {string} menu[].path
+  ! @param {string} menu[].icon
+  ! @param {string} menu[].label
+  !
+--}}
+<footer class="footer">
+  {{# each menu }}
+    <div class="footer-item">
+      <a href="{{ path }}" {{ ext-target path }}><i class="{{ icon-class icon }}"></i> {{ label }}</a>
+    </div>
+  {{/ each }}
+</footer>

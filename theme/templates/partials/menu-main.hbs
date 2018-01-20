@@ -1,0 +1,36 @@
+{{!--
+  ! Main navigation menu.
+  !
+  ! @param {object[]} menu
+  ! @param {string} menu[].path
+  ! @param {string} menu[].icon
+  ! @param {string} menu[].label
+  !
+--}}
+<nav class="nav-main">
+  {{!-- Hamburger menu: displayed only in small screens --}}
+  <i id="mobilemenu" class="fa fa-bars"></i>
+  {{!-- this button only shows on mobile version of a "class" page --}}
+  {{!-- if currentUrl === '/classes/class'
+  <a href="/classes/{{ currentVersion }}"><i id="goBackToClassList" class="fa fa-arrow-left"></i></a>
+  --}}
+
+  <div class="banner">
+    <div class="menu">
+      {{# each menu }}
+        <div class="item"><a href="{{ path }}" {{ ext-target path }}>{{ label }}</a></div>
+      {{/ each }}
+    </div>
+
+    <div class="more">
+      <div class="searchbar">
+        <form method="get" action="search">
+          <input type="text" name="q" placeholder="Search...">
+          <button type="submit"><i class="{{ icon-class "search" }}"></i></button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+</nav>

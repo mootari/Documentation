@@ -1,0 +1,14 @@
+{
+  "name": "babylonjsdoc-theme",
+  "version": "1.0.0",
+  "description": "Website theme for doc.babylonjs.com",
+  "main": "theme.js",
+  "scripts": {},
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "bourbon": "^4.2.3",
+    "bourbon-neat": "^1.7.2",
+    "gulp-sass": "^3.1.0"
+  }
+}

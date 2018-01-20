@@ -1,0 +1,41 @@
+<script>$(function() {
+
+  // Collect and group elements.
+  var groups = new Map();
+  $('.fileList').children().each(function() {
+    var $item = $(this);
+    var groupName = $item.data('group');
+    var groupLabel = $item.data('group-label');
+    var group = group.get(groupName);
+
+    if(!group) {
+      group = { label: groupLabel, $items: $([]) };
+      groups.set(groupName, group);
+    }
+    else if(group.label !== groupLabel) {
+      throw new Error('Label "' + groupLabel + '" for group "' + groupName + '" does not match previously set label "' + group.label + '".');
+    }
+    group.$items = group.$items.add($item);
+  });
+
+  // Initialize buttons and listeners.
+  if(groups.size) {
+    var $itemsAll = groups.reduce(function($items, group) {
+      return $items.add(group.$items);
+    }, $([]));
+    groups.unshift({
+      label: 'All',
+      $items: $itemsAll
+    });
+
+    var $triggers = $([]);
+    var $wrapper = $('<div class="tagList">')
+      .click(function() {
+
+      });
+    groups.each(function(group) {
+
+    });
+  }
+
+})</script>

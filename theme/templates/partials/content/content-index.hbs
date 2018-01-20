@@ -1,0 +1,15 @@
+<div class="statics-content">
+  <div class="fileList">
+    {{# each children }}
+      <div class="fileTitle {{ this.groupName }} All">
+        <div class="fileNumber"></div>
+        <a class="checkLocal" href="{{ this.fullPath }}">{{ this.title }}
+          <div class="inline-tags">
+            <div class="inline-tag">{{ this.groupTitle }}</div>
+          </div>
+        </a>
+      </div>
+    {{/ each }}
+  </div>
+  {{> script-file-groups }}
+</div>

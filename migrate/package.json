@@ -1,0 +1,28 @@
+{
+  "name": "babylonjsdoc-migrate",
+  "version": "0.0.0",
+  "description": "Moves metadata and redirects into Markdown files.",
+  "main": "migrate.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "config": {
+    "content": "../content",
+    "exclude": "classes/**/*.md",
+    "linksources": "slug url",
+    "linktarget": "url",
+    "metadata": "../data/statics.json",
+    "redirects": "../public/html/_redirects",
+    "dryrun": 0
+  },
+  "scripts": {
+    "migrate": "node migrate.js",
+    "migrate-dryrun": "npm run migrate --babylonjsdoc-migrate:dryrun=1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "glob": "^7.1.2",
+    "mdify": "^1.0.10",
+    "urlify": "^0.3.6"
+  }
+}

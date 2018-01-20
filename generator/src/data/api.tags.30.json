@@ -1,0 +1,331 @@
+{
+  "Node": [
+    "AbstractMesh",
+    "AnaglyphArcRotateCamera",
+    "AnaglyphFreeCamera",
+    "AnaglyphGamepadCamera",
+    "ArcRotateCamera",
+    "Camera",
+    "DeviceOrientationCamera",
+    "DirectionalLight",
+    "FollowCamera",
+    "FreeCamera",
+    "GamepadCamera",
+    "GroundMesh",
+    "HemisphericLight",
+    "InstancedMesh",
+    "Light",
+    "LinesMesh",
+    "Mesh",
+    "Node",
+    "PointLight",
+    "SpotLight",
+    "StereoscopicArcRotateCamera",
+    "StereoscopicFreeCamera",
+    "StereoscopicGamepadCamera",
+    "TargetCamera",
+    "TouchCamera",
+    "VRDeviceOrientationFreeCamera",
+    "VirtualJoysticksCamera",
+    "WebVRFreeCamera"
+  ],
+  "Mesh": [
+    "AbstractMesh",
+    "BoundingBox",
+    "BoundingBoxRenderer",
+    "BoundingInfo",
+    "BoundingSphere",
+    "GroundMesh",
+    "InstancedMesh",
+    "LinesMesh",
+    "Mesh",
+    "MeshAssetTask",
+    "MeshLODLevel",
+    "SubMesh"
+  ],
+  "Action": [
+    "Action",
+    "ActionEvent",
+    "ActionManager",
+    "CombineAction",
+    "DoNothingAction",
+    "ExecuteCodeAction",
+    "IncrementValueAction",
+    "InterpolateValueAction",
+    "PlayAnimationAction",
+    "PlaySoundAction",
+    "SetParentAction",
+    "SetStateAction",
+    "SetValueAction",
+    "StopAnimationAction",
+    "StopSoundAction",
+    "SwitchBooleanAction"
+  ],
+  "Camera": [
+    "AnaglyphArcRotateCamera",
+    "AnaglyphFreeCamera",
+    "AnaglyphGamepadCamera",
+    "ArcRotateCamera",
+    "Camera",
+    "DeviceOrientationCamera",
+    "FollowCamera",
+    "FreeCamera",
+    "GamepadCamera",
+    "StereoscopicArcRotateCamera",
+    "StereoscopicFreeCamera",
+    "StereoscopicGamepadCamera",
+    "TargetCamera",
+    "TouchCamera",
+    "VRDeviceOrientationFreeCamera",
+    "VirtualJoysticksCamera",
+    "WebVRFreeCamera"
+  ],
+  "ArcRotateCamera": [
+    "AnaglyphArcRotateCamera",
+    "ArcRotateCamera",
+    "StereoscopicArcRotateCamera"
+  ],
+  "TargetCamera": [
+    "AnaglyphFreeCamera",
+    "AnaglyphGamepadCamera",
+    "DeviceOrientationCamera",
+    "FollowCamera",
+    "FreeCamera",
+    "GamepadCamera",
+    "StereoscopicFreeCamera",
+    "StereoscopicGamepadCamera",
+    "TargetCamera",
+    "TouchCamera",
+    "VRDeviceOrientationFreeCamera",
+    "VirtualJoysticksCamera",
+    "WebVRFreeCamera"
+  ],
+  "FreeCamera": [
+    "AnaglyphFreeCamera",
+    "AnaglyphGamepadCamera",
+    "DeviceOrientationCamera",
+    "FreeCamera",
+    "GamepadCamera",
+    "StereoscopicFreeCamera",
+    "StereoscopicGamepadCamera",
+    "TouchCamera",
+    "VRDeviceOrientationFreeCamera",
+    "VirtualJoysticksCamera",
+    "WebVRFreeCamera"
+  ],
+  "GamepadCamera": [
+    "AnaglyphGamepadCamera",
+    "GamepadCamera",
+    "StereoscopicGamepadCamera"
+  ],
+  "PostProcess": [
+    "AnaglyphPostProcess",
+    "BlackAndWhitePostProcess",
+    "BlurPostProcess",
+    "ColorCorrectionPostProcess",
+    "ConvolutionPostProcess",
+    "DisplayPassPostProcess",
+    "FilterPostProcess",
+    "FxaaPostProcess",
+    "LensRenderingPipeline",
+    "PassPostProcess",
+    "PostProcess",
+    "PostProcessManager",
+    "PostProcessRenderEffect",
+    "PostProcessRenderPass",
+    "PostProcessRenderPipeline",
+    "PostProcessRenderPipelineManager",
+    "PostProcessesOptimization",
+    "RefractionPostProcess",
+    "SSAORenderingPipeline",
+    "StereoscopicInterlacePostProcess",
+    "TonemappingOperator",
+    "VRDistortionCorrectionPostProcess",
+    "VolumetricLightScatteringPostProcess"
+  ],
+  "Math": [
+    "Angle",
+    "Arc2",
+    "Axis"
+  ],
+  "Animation": [
+    "Animatable",
+    "Animation"
+  ],
+  "Assets": [
+    "AssetsManager",
+    "ImageAssetTask",
+    "MeshAssetTask",
+    "TextFileAssetTask",
+    "TextureAssetTask"
+  ],
+  "Audio": [
+    "AudioEngine",
+    "Sound",
+    "SoundTrack"
+  ],
+  "EasingFunction": [
+    "BackEase",
+    "BounceEase",
+    "CircleEase",
+    "CubicEase",
+    "EasingFunction",
+    "ElasticEase",
+    "ExponentialEase",
+    "PowerEase",
+    "QuadraticEase",
+    "QuarticEase",
+    "QuinticEase",
+    "SineEase"
+  ],
+  "BaseTexture": [
+    "BaseTexture",
+    "CubeTexture",
+    "CustomProceduralTexture",
+    "DynamicTexture",
+    "MirrorTexture",
+    "ProceduralTexture",
+    "RawTexture",
+    "RenderTargetTexture",
+    "Texture",
+    "VideoTexture"
+  ],
+  "Bounding": [
+    "BoundingBox",
+    "BoundingBoxRenderer",
+    "BoundingInfo",
+    "BoundingSphere"
+  ],
+  "Plugins": [
+    "CannonJSPlugin",
+    "OimoJSPlugin"
+  ],
+  "Collision": [
+    "CollideWorker",
+    "Collider",
+    "CollisionCache",
+    "CollisionCoordinatorLegacy",
+    "CollisionCoordinatorWorker",
+    "CollisionDetectorTransferable",
+    "WorkerReplyType",
+    "WorkerTaskType"
+  ],
+  "Objects": [
+    "Color3",
+    "Color4",
+    "Curve3",
+    "Vector2",
+    "Vector3",
+    "Vector4"
+  ],
+  "Condition": [
+    "Condition",
+    "PredicateCondition",
+    "StateCondition",
+    "ValueCondition"
+  ],
+  "Texture": [
+    "CustomProceduralTexture",
+    "DynamicTexture",
+    "MirrorTexture",
+    "ProceduralTexture",
+    "RawTexture",
+    "RenderTargetTexture",
+    "Texture",
+    "VideoTexture"
+  ],
+  "ProceduralTexture": [
+    "CustomProceduralTexture",
+    "ProceduralTexture"
+  ],
+  "Tools": [
+    "DDSTools",
+    "DebugLayer",
+    "Tools"
+  ],
+  "Database": [
+    "Database"
+  ],
+  "Light": [
+    "DirectionalLight",
+    "HemisphericLight",
+    "Light",
+    "PointLight",
+    "SpotLight"
+  ],
+  "Effect": [
+    "Effect",
+    "EffectFallbacks"
+  ],
+  "Engine": [
+    "Engine",
+    "EngineCapabilities",
+    "PhysicsEngine"
+  ],
+  "Files": [
+    "FilesInput"
+  ],
+  "Gamepad": [
+    "Gamepad",
+    "Gamepads",
+    "GenericPad",
+    "Xbox360Button",
+    "Xbox360Dpad",
+    "Xbox360Pad"
+  ],
+  "Geometry": [
+    "Geometry",
+    "Plane"
+  ],
+  "Scene": [
+    "HardwareScalingOptimization",
+    "LensFlaresOptimization",
+    "MergeMeshesOptimization",
+    "ParticlesOptimization",
+    "PostProcessesOptimization",
+    "RenderTargetsOptimization",
+    "Scene",
+    "SceneLoader",
+    "SceneOptimization",
+    "SceneOptimizer",
+    "SceneOptimizerOptions",
+    "SceneSerializer",
+    "ShadowsOptimization",
+    "TextureOptimization"
+  ],
+  "SceneOptimization": [
+    "HardwareScalingOptimization",
+    "LensFlaresOptimization",
+    "MergeMeshesOptimization",
+    "ParticlesOptimization",
+    "PostProcessesOptimization",
+    "RenderTargetsOptimization",
+    "SceneOptimization",
+    "ShadowsOptimization",
+    "TextureOptimization"
+  ],
+  "PostProcessRenderPipeline": [
+    "LensRenderingPipeline",
+    "PostProcessRenderPipeline",
+    "SSAORenderingPipeline"
+  ],
+  "Material": [
+    "Material",
+    "MultiMaterial",
+    "ShaderMaterial",
+    "StandardMaterial"
+  ],
+  "TargetTexture": [
+    "MirrorTexture",
+    "RenderTargetTexture"
+  ],
+  "Particle": [
+    "Particle",
+    "ParticleSystem",
+    "ParticlesOptimization"
+  ],
+  "Sprite": [
+    "Sprite",
+    "SpriteManager"
+  ]
+}

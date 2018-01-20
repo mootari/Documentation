@@ -9,9 +9,6 @@ data/classes-tags.json
 data/classes.json
 data/forward.json
 
-!public/html
-!public/js
-public/html/*
+public/*
 
-!public/html/img/
 .history/

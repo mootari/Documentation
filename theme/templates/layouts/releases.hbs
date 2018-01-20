@@ -1,0 +1,15 @@
+{{#> wrapper-content }}
+
+  <div id="staticContent">
+
+    {% body %}
+
+    {{# if toc }}{{> content-toc toc=this.toc }}{{/ if }}
+
+    {{# each releases }}
+      <h1 id="{{ toc_slug }}">{{ name }}</h1>
+      {{{ body }}}
+    {{/ each }}
+
+  </div>
+{{/ wrapper-content }}

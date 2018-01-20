@@ -1,0 +1,35 @@
+{{!--
+  ! Global page skeleton.
+  !
+  ! Usage:
+  ! ```
+  ! {{# > skeleton-base }}
+  !   My Handlebars content
+  ! {{/ skeleton-base }}
+  ! ```
+  !
+  ! @param {string} [this.title]
+  ! @param {string} [this.abstract]
+  ! @param {array} this.menu.main
+  ! @param {array} this.menu.footer
+--}}
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>{{# if title }}{{ title }} | {{/ if }}BabylonJS Documentation</title>
+    {{# if abstract }}<meta name="description" content="{{ abstract }}">{{/ if }}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{> app-icon }}
+    {{> stylesheets }}
+    {{> script-common }}
+  </head>
+  <body>
+    {{> menu-main menu=menu.main }}
+
+    {{> @partial-block }}
+
+    {{> menu-footer menu=menu.footer }}
+    {{> script-analytics }}
+  </body>
+</html>

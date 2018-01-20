@@ -1,0 +1,15 @@
+{{#> wrapper-html }}
+
+  <div id="wrapper">
+    <div class="statics-banner">
+      {{# if category }}<h1>{{ category }}</h1>{{/ if }}
+    </div>
+    <div class="horizontal-separator"></div>
+    <div class="static-content">
+      {{> @partial-block }}
+    </div>
+  </div>
+
+  <script src="/js/static.js"></script>
+
+{{/ wrapper-html }}
